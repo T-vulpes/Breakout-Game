@@ -120,13 +120,13 @@ function getRandomNeonColor() {
 
 function drawScore() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#FFF"; // Beyaz skor
+    ctx.fillStyle = "#FFF"; 
     ctx.fillText("Score: " + score, 8, 20);
 }
 
 function drawLives() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#FFF"; // Beyaz canlar
+    ctx.fillStyle = "#FFF"; 
     ctx.fillText("Lives: " + lives, canvas.width - 65, 20);
 }
 
