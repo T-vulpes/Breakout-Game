@@ -14,8 +14,8 @@ let paddleX = (canvas.width - paddleWidth) / 2;
 let rightPressed = false;
 let leftPressed = false;
 
-const brickRowCount = 7; // Daha fazla tuğla sırası
-const brickColumnCount = 13; // Daha fazla tuğla sütunu
+const brickRowCount = 7; 
+const brickColumnCount = 13; 
 const brickWidth = 75;
 const brickHeight = 20;
 const brickPadding = 12;
@@ -82,7 +82,7 @@ function collisionDetection() {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-    ctx.fillStyle = "#FFF"; // Beyaz top
+    ctx.fillStyle = "#FFF"; 
     ctx.fill();
     ctx.closePath();
 }
@@ -90,7 +90,7 @@ function drawBall() {
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = "#FFF"; // Beyaz paddle
+    ctx.fillStyle = "#FFF"; 
     ctx.fill();
     ctx.closePath();
 }
